@@ -25,8 +25,8 @@
         {
             Console.Write("Inside Set(int, int). ");
             x = a;
-             y = b;
- Show();
+            y = b;
+            Show();
         }
         // Overload set.
         public void Set(double a, double b)
