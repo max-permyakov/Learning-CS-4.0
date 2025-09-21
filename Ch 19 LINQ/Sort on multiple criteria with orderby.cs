@@ -40,8 +40,8 @@ class OrderbyDemo
         var accInfo = from acc in accounts
                       orderby acc.LastName, acc.FirstName, acc.Balance
                       select acc;
-       
-    Console.WriteLine("Accounts in sorted order: ");
+
+        Console.WriteLine("Accounts in sorted order: ");
         string str = "";
         // Execute the query and display the results.
         foreach (Account acc in accInfo)
@@ -57,19 +57,20 @@ class OrderbyDemo
         }
         Console.WriteLine();
     }
-//}
-//The output is shown here:
-//Accounts in sorted order:
-//Jones, Jenny Acc#: 108CK, $10.98
-//Jones, Ralph Acc#: 434CK, ($123.32)
-//Jones, Ralph Acc#: 454MM, $987.13
-//Jones, Ralph Acc#: 436CD, $1,923.85
-//Krammer, Betty Acc#: 968MM, $5,146.67
-//Krammer, Ted Acc#: 897CD, $3,223.19
-//Smith, Albert Acc#: 445CK, ($213.67)
-//Smith, Carl Acc#: 078CD, $15,345.99
-//Smith, Sara Acc#: 843CK, $345.00
-//Smith, Sara Acc#: 543MM, $5,017.40
-//Smith, Sara Acc#: 547CD, $34,955.79
-//Smith, Tom Acc#: 132CK, $100.23
-//Smith, Tom Acc#: 132CD, $10,000.00
+    //}
+    //The output is shown here:
+    //Accounts in sorted order:
+    //Jones, Jenny Acc#: 108CK, $10.98
+    //Jones, Ralph Acc#: 434CK, ($123.32)
+    //Jones, Ralph Acc#: 454MM, $987.13
+    //Jones, Ralph Acc#: 436CD, $1,923.85
+    //Krammer, Betty Acc#: 968MM, $5,146.67
+    //Krammer, Ted Acc#: 897CD, $3,223.19
+    //Smith, Albert Acc#: 445CK, ($213.67)
+    //Smith, Carl Acc#: 078CD, $15,345.99
+    //Smith, Sara Acc#: 843CK, $345.00
+    //Smith, Sara Acc#: 543MM, $5,017.40
+    //Smith, Sara Acc#: 547CD, $34,955.79
+    //Smith, Tom Acc#: 132CK, $100.23
+    //Smith, Tom Acc#: 132CD, $10,000.00
+}
